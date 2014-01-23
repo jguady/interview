@@ -1,4 +1,4 @@
-interview
+Personal Interview Questions and Solutions
 =========
 
-commonInterviewQuestionsSolutions
+just a simple repo for interview questions and their solutions.
