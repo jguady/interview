@@ -25,6 +25,7 @@ public class DupArray {
 	public Set<String> removeDupsWithSet(String[] array)
 	{
 		Set<String> setter = new HashSet<String>();
+		
 		for(String str:array)
 		{
 			setter.add(str);

@@ -18,7 +18,7 @@ public class FizzBuzz {
 	public void fizzAndBuzz()
 	{
 		
-		for(int i=1;i<100;i++)
+		for(int i=1;i<=100;i++)
 		{
 			String str = "";
 			if(i%3 == 0)
@@ -51,12 +51,12 @@ public class FizzBuzz {
 		for(int i=0;i<list.length;i++)
 		{
 			String str = "";
-			if(i%3 == 0)
+			if(list[i]%3 == 0)
 				str+="Fizz";
-			if(i%5 == 0)
+			if(list[i]%5 == 0)
 				str+="Buzz";
 			if(str.isEmpty())
-				str+=i;
+				str+=list[i];
 			System.out.println(str);
 		}
 		
@@ -67,10 +67,16 @@ public class FizzBuzz {
 		
 		FizzBuzz fb = new FizzBuzz();
 		fb.fizzAndBuzz();
-		for(int i=1;i<100;i++)
+		System.out.println("==================");
+		int[] arr= new int[100];
+		for(int i=0;i<100;i++)
 		{
-			
+			arr[i]=i+1;
 		}
+		fb.FizzBuzzList(arr);
+		System.out.println("==================");
+		fb.FizzBuzzList2(arr);
+		System.out.println("==================");
 	}
 
 }
