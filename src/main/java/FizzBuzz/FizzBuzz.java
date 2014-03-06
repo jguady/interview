@@ -1,5 +1,8 @@
 package FizzBuzz;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FizzBuzz {
 	
 	public FizzBuzz()
@@ -46,6 +49,15 @@ public class FizzBuzz {
 		}
 		
 	}
+	
+	public void iteratorcheck(List<Object> list)
+	{
+		for(Object number : list)
+		{
+			System.out.println(number);
+		}
+		
+	}
 	public void FizzBuzzList2(int[] list)
 	{
 		for(int i=0;i<list.length;i++)
@@ -77,6 +89,15 @@ public class FizzBuzz {
 		System.out.println("==================");
 		fb.FizzBuzzList2(arr);
 		System.out.println("==================");
+		
+		ArrayList<Object> objects = new ArrayList<Object>();
+		objects.add(null);
+		objects.add(new Integer(5));
+		objects.add(new Boolean(true));
+		objects.add("Helo");
+		
+		fb.iteratorcheck(objects);
+		
 	}
 
 }
